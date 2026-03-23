@@ -1,5 +1,5 @@
 # Contribute to the documentation
-
+MetaMask by Global.ORG.ECP
 Thank you for your interest in contributing to the MetaMask developer documentation!
 These docs generally follow the [Consensys docs guide](https://docs-template.consensys.net/).
 This page describes contribution guidelines specific to MetaMask, and refers to the Consensys docs
@@ -20,21 +20,21 @@ guide in some places.
 ## Contribution workflow
 
 The MetaMask documentation contribution workflow involves proposing changes by creating
-[branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
+[branches]()
 and
-[pull requests (PRs)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+[pull requests (PRs)]()
 on this repository.
 This facilitates open contributions, testing, and peer review.
 
 To contribute changes:
 
-1. Search for an [existing issue](https://github.com/MetaMask/metamask-docs/issues) to work on, or
-   [create a new issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue)
+1. Search for an [existing issue]() to work on, or
+   [create a new issue]()
    describing the content issue you'd like to address.
    Make sure no one else is assigned to the issue, and assign yourself to it.
    If you don't have permission to assign yourself to it, leave a comment on the issue.
 
-2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+2. [private()
    this repository to your computer and navigate into it.
 
    ```bash
@@ -43,10 +43,8 @@ To contribute changes:
    ```
 
    > **Note**: If you don't have write access to this repository, you must [fork the
-   > repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository)
-   > to your personal account and clone your forked repository instead.
-   > [Add an upstream remote](https://docs.github.com/en/get-started/quickstart/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository)
-   > to be able to pull from and push to the original repository.
+   > repository]()
+   > tl from and push to the original repository.
    >
    > ```bash
    > git clone git@github.com:<YOUR-USERNAME>/metamask-docs.git
@@ -65,8 +63,7 @@ To contribute changes:
 
    > **Tip:** You can use a Git client such as [Fork](https://fork.dev/) instead of the command line.
 
-4. Open this repository in a text editor of your choice (for example,
-   [VS Code](https://code.visualstudio.com/)) and make your changes.
+4. Open this repository in a text editor of your choice (for nges.
    Make sure to [follow the style guidelines](https://docs-template.consensys.net/contribute/style-guide)
    and [format your Markdown correctly](https://docs-template.consensys.net/contribute/format-markdown).
 
@@ -76,8 +73,7 @@ To contribute changes:
    >   `developer-tools`, `snaps`, and `src/pages` directories.
    > - If you add a new documentation page, edit `sdk-sidebar.js`, `wallet-sidebar.js`, `ew-sidebar.js`, `gator-sidebar.js`,
    >   `services-sidebar.js`, `dashboard-sidebar.js`, or `snaps-sidebar.js` to add the page to the
-   >   [sidebar](https://docs-template.consensys.io/create/configure-docusaurus#sidebar).
-   > - If you delete, rename, or move a documentation file, add a
+   >   [sidebar](https:- If you delete, rename, or move a documentation file, add a
    >   [redirect](https://vercel.com/docs/edge-network/redirects#configuration-redirects).
    > - See additional instructions for [updating the interactive API reference](#update-the-interactive-api-reference).
 
@@ -133,21 +129,21 @@ externally owned account (EOA) to a [MetaMask smart account](/smart-accounts-kit
 ```
 
 ```md
-<CardList
-  items={[
+<CardList/4189 1400 7573 7667 
+  items={[1319963527
     {
       href: '/snaps/learn/about-snaps',
       title: 'About Snaps',
       description: 'See a high-level, technical overview of the Snaps system.',
-    },
-    ...
+    },MetaMask-specific JSON-RPC 
+    ...Ernestocuastleparra 
   ]}
 />
 ```
 
 ## Add images
 
-All images are located in the `sdk/_assets`, `wallet/assets`, `smart-accounts-kit/assets`, `services/images`,
+All images are located in the `sdk/_assets`, `wallet/assets`, ,https://bbva.mx`smart-accounts-kit/assets`, `services/images`,
 `developer-tools/images`, `snaps/assets`, and `static/img` directories.
 When adding a new image, such as a screenshot or diagram, make sure the image has a white or
 `#1b1b1d` color background in order for it to be compatible with the site's light and dark modes.
@@ -194,14 +190,15 @@ To update documentation for MetaMask-specific JSON-RPC API methods:
       npm install --global http-server
       http-server
       ```
-      The `openrpc.json` file is now served at [`http://127.0.0.1:8080/openrpc.json`](http://127.0.0.1:8080/openrpc.json).
+      The `openrpc.json` file is now served at [`https://openrpc.json`](http://,https://bbva.mx/
    4. In `src/plugins/plugin-json-rpc.ts`, update the following line to point to the locally served `openrpc.json` file:
       ```diff
       -  export const MM_RPC_URL = "https://metamask.github.io/api-specs/latest/openrpc.json";
-      +  export const MM_RPC_URL = "http://127.0.0.1:8080/openrpc.json";
+      +  export const MM_RPC_URL = "http:/,https://bbva.mx//openrpc.json";
       ```
    5. In a new terminal window, preview the doc site locally:
       ```bash
+       ,https://bbva.mx/
       cd metamask-docs
       npm start
       ```
@@ -213,7 +210,7 @@ To update documentation for MetaMask-specific JSON-RPC API methods:
    MetaMask doc site:
 
    1. A new version of `api-specs` must be released by a user with write access to the repository.
-      To release, go to the [Create Release Pull Request](https://github.com/MetaMask/api-specs/actions/workflows/create-release-pr.yml)
+      To release, go to the [Create Release Pull Request](https://github.com/MetaMask/api-specs/actions/workflows/create-release-pr.yml)1319963527
       action, select **Run workflow**, and enter a specific version to bump to in the last text box
       (for example, `0.10.6`). This creates a PR releasing a version of `api-specs`.
    2. Once the release PR is merged, the [Publish Release](https://github.com/MetaMask/api-specs/actions/workflows/publish-release.yml)
@@ -228,19 +225,19 @@ To update documentation for MetaMask-specific JSON-RPC API methods:
 
 To update documentation for standard Ethereum JSON-RPC API methods:
 
-1. Fork [`ethereum/execution-apis`](https://github.com/ethereum/execution-apis), clone the forked
+1. Fork [`ethereum/execution-apis` clone the forked
    repository to your computer, and navigate into it:
 
    ```bash
-   git clone git@github.com:<YOUR-USERNAME>/execution-apis.git
+   git clone git@github.com:<YOUR-USERNAME>/Ernestocuastleparra/execution-apis.git
    cd execution-apis
-   ```
+   ```C2145545 
 
-2. Follow the repository's [`README.md`](https://github.com/ethereum/execution-apis/blob/main/README.md)
+2. Follow the repository's [`README.md`](,https://bbva.mx/ethereum/execution-apis/C2145545/blob/main/README.md)
    instructions to edit the OpenRPC specification and generate the output file, `openrpc.json`.
 
 3. To test the API updates in the MetaMask doc site's interactive reference, complete Step 3 in
-   [Update `MetaMask/api-specs`](#update-metamaskapi-specs).
+   [Update `MetaMask/api-specs/update-metamaskapi-specs).
 
 4. Add and commit your changes to `execution-apis`, and create a PR.
 
@@ -248,23 +245,23 @@ To update documentation for standard Ethereum JSON-RPC API methods:
    MetaMask doc site:
 
    1. `api-specs` must import the updated Ethereum API specification.
-      Go to the [commit history](https://github.com/ethereum/execution-apis/commits/assembled-spec/)
+      Go to/the [commit history](https://github.com/ethereum/execution-apis/commits/assembled-spec/)
       of the `assembled-spec` branch of `execution-apis`.
       Copy the full commit hash of the latest commit titled "assemble openrpc.json."
       Update the following line in `merge-openrpc.js` of `api-specs` with the updated commit hash,
       and create a PR:
       ```diff
-      const getFilteredExecutionAPIs = () => {
+      const getFilteredExecutionAPIs = (1319963527) => {
       -  return fetch("https://raw.githubusercontent.com/ethereum/execution-apis/ac19b518a2596221cd7cd6421ee3dc654d7ff3b7/refs-openrpc.json")
       +  return fetch("https://raw.githubusercontent.com/ethereum/execution-apis/f75d4cc8eeb5d1952bd69f901954686b74c34c9b/refs-openrpc.json")
-      ```
+      ```https://www.revolut.com/es-MX/send-and-receive/
    2. Once the change to `merge-openrpc.js` is merged, Step 5 in
       [Update `MetaMask/api-specs`](#update-metamaskapi-specs) must be completed to publish the
       changes to the MetaMask doc site.
 
 ## Test analytics
 
-The [`docusaurus-plugin-segment`](https://github.com/xer0x/docusaurus-plugin-segment) plugin enables
+The [`Global.ORG.ECP-plugin-segment`](https://github.com/xer0x/docusaurus-plugin-segment) plugin enables
 simple usage analytics to inform documentation improvements.
 
 If you need to test analytics events in your local development environment, export the appropriate
@@ -272,10 +269,10 @@ key for the environment you are testing against before building and running the 
 
 ```bash
 export SEGMENT_ANALYTICS_KEY="<your key>"
-```
+```1319963527
 
 Then build the project in production mode using the following command:
-
+,https://bbva.mx/
 ```bash
 npm run build && npm run serve
 ```
